@@ -32,14 +32,20 @@
         {
             color: #4560DB;
         }
+        .section_logo
+        {
+            display: block;
+            margin: auto;
+        }
     </style>
 </head>
-
 <body>
     <div class="main">
-        <h1>Unix Shell Command Cheat Sheet</h1>
-        <h2>Learn Basic Unix Shell Commands</h2>
-        <p>I'm just starting to learn how to use the UNIX Shell. At first it was a little bit intimidating but the more I use it the more I realize how useful it is. Here I have compiled a list of some basic, useful commands for the Unix Shell.</p>
+        <h1>UNIX Shell Command Cheat Sheet</h1>
+        <img src="/unixshellcheatsheet/unix_logo.png" class="section_logo">
+        <h2>Learn Basic UNIX Shell Commands</h2>
+        <p>I'm just starting to learn how to use the UNIX Shell. At first it was a little bit intimidating but the more I use it the more I realize how useful it is. Here I have compiled a list of some basic, useful commands for the UNIX Shell.</p>
+        <p>To learn more about UNIX <a href="http://opengroup.org/unix">go here.</a></p>
         
         <table border="1">
             <tr>
@@ -47,7 +53,6 @@
                 <th>Description</th>
                 <th>Example(s)</th>
             </tr>
-            
             <tr>
                 <td>cd [options] [directory]</td>
                 <td>Change directory. You can use: <pre>$ cd ..</pre> to go up one directory.</td>
@@ -57,7 +62,6 @@ $ cd Documents
 </pre>
                 </td>
             </tr>
-            
             <tr>
                 <td>ls [options] [filename ...]</td>
                 <td>List files</td>
@@ -71,7 +75,35 @@ index.html
                 </td>
             </tr>
         </table>
-        
+        <img src="/unixshellcheatsheet/logomark-orange@2x.png" class="section_logo">
+        <h2>Git Command Cheat Sheet</h2>
+        <p>Git is an amazing way to handle version control. Here's a list of common commands to use as you work on projects and keep track of your changes with git.</p>
+        <p>You can <a href="https://git-scm.com/">download git here.</a></p>
+        <table border="1">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Example(s)</th>
+            </tr>
+            <tr>
+                <td>git status</td>
+                <td>stuff</td>
+                <td class="terminal">
+<pre>
+$ git status
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>git init</td>
+                <td>stuff</td>
+                <td class="terminal">
+<pre>
+$ git init
+</pre>
+                </td>
+            </tr>
+        </table>
     </div>
 </body>    
 </html>
