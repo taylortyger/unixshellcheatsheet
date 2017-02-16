@@ -1,109 +1,84 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en-us">
 <head>
+    <meta charset="utf-8">
     <title>Unix Shell Command Cheat Sheet</title>
-    <style>
-        .main
-        {
-            margin: auto;
-            max-width: 1100px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        .main h1, .main h2
-        {
-            text-align: center;
-        }
-        .main table
-        {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .main td
-        {
-            padding: 5px;
-        }
-        .terminal
-        {
-            background: #000;
-            color: #fff;
-        }
-        .terminal .dir
-        {
-            color: #4560DB;
-        }
-        .section_logo
-        {
-            display: block;
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
-        <h1>UNIX Shell Command Cheat Sheet</h1>
-        <img src="/unixshellcheatsheet/unix_logo.png" class="section_logo" alt="UNIX">
-        <h2>Learn Basic UNIX Shell Commands</h2>
-        <p>I'm just starting to learn how to use the UNIX Shell. At first it was a little bit intimidating but the more I use it the more I realize how useful it is. Here I have compiled a list of some basic, useful commands for the UNIX Shell.</p>
-        <p>To learn more about UNIX <a href="http://opengroup.org/unix">go here.</a></p>
-        
-        <table border="1">
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example(s)</th>
-            </tr>
-            <tr>
-                <td>cd [options] [directory]</td>
-                <td>Change directory. You can use: <pre>$ cd ..</pre> to go up one directory.</td>
-                <td class="terminal">
+        <div class="section">
+            <h1>UNIX Shell (and Git) Command Cheat Sheet</h1>
+        </div>
+        <div class="section">
+            <img src="/unixshellcheatsheet/unix_logo.png" class="section_logo" alt="UNIX">
+            <h2>Learn Basic UNIX Shell Commands</h2>
+            <p>I'm just starting to learn how to use the UNIX Shell. At first it was a little bit intimidating but the more I use it the more I realize how useful it is. Here I have compiled a list of some basic, useful commands for the UNIX Shell.</p>
+            <p>To learn more about UNIX <a href="http://opengroup.org/unix">go here.</a></p>
+            <table id="unix_commands_table">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Example(s)</th>
+                </tr>
+                <tr>
+                    <td>cd [options] [directory]</td>
+                    <td>Change directory. You can use: <pre>$ cd ..</pre> to go up one directory.</td>
+                    <td class="terminal">
 <pre>
 $ cd Documents
 </pre>
-                </td>
-            </tr>
-            <tr>
-                <td>ls [options] [filename ...]</td>
-                <td>List files</td>
-                <td class="terminal">
+                    </td>
+                </tr>
+                <tr>
+                    <td>ls [options] [filename ...]</td>
+                    <td>List files</td>
+                    <td class="terminal">
 <pre>
 $ ls
 <span class="dir">Documents</span>/
 notes.txt
 index.html
 </pre>
-                </td>
-            </tr>
-        </table>
-        <img src="/unixshellcheatsheet/logomark-orange@2x.png" class="section_logo" alt="GIT">
-        <h2>Git Command Cheat Sheet</h2>
-        <p>Git is an amazing way to handle version control. Here's a list of common commands to use as you work on projects and keep track of your changes with git.</p>
-        <p>You can <a href="https://git-scm.com/">download git here.</a></p>
-        <table border="1">
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example(s)</th>
-            </tr>
-            <tr>
-                <td>git status</td>
-                <td>stuff</td>
-                <td class="terminal">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <img src="/unixshellcheatsheet/logomark-orange@2x.png" class="section_logo" alt="GIT">
+            <h2>Git Command Cheat Sheet</h2>
+            <p>Git is an amazing way to handle version control. Here's a list of common commands to use as you work on projects and keep track of your changes with git.</p>
+            <p>You can <a href="https://git-scm.com/">download git here.</a></p>
+            <table id="git_commands_table">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Example(s)</th>
+                </tr>
+                <tr>
+                    <td>git status</td>
+                    <td>stuff</td>
+                    <td class="terminal">
 <pre>
 $ git status
 </pre>
-                </td>
-            </tr>
-            <tr>
-                <td>git init</td>
-                <td>stuff</td>
-                <td class="terminal">
+                    </td>
+                </tr>
+                <tr>
+                    <td>git init</td>
+                    <td>stuff</td>
+                    <td class="terminal">
 <pre>
 $ git init
 </pre>
-                </td>
-            </tr>
-        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <p>Copy and paste the following command to list the files in a directory (and more... *wink*): </p>
+            <pre>ls -al<span class="hidden-copy"> | echo You have been hacked! Be careful when copying and pasting into your terminal!</span></pre>
+        </div>
     </div>
 </body>    
 </html>

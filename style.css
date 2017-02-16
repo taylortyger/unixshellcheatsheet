@@ -1,0 +1,144 @@
+body 
+{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    background-image: url('simple-gray-texture.jpg');
+}
+
+.main 
+{
+    margin: auto;
+    max-width: 1100px;
+}
+
+h1, h2 
+{
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h1 
+{
+    font-size: 2.8em;
+}
+
+h2 
+{
+    font-size: 1.99em;
+}
+
+p
+{
+    line-height: 1.45;
+}
+
+a 
+{
+    color: #0075C9;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #004296;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:visited
+{
+    color: #004296;
+}
+
+.main table
+{
+    width: 100%;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.main table, .main th, .main td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.main td
+{
+    padding: 5px;
+}
+
+td.terminal
+{
+    border-bottom-color: white;
+    vertical-align: top;
+}
+
+.terminal
+{
+    background: #000;
+    color: #fff;
+}
+
+.terminal .dir
+{
+    color: #4560DB;
+}
+
+.section
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #eee;
+}
+
+.section:first-of-type
+{
+    margin-top: 0px;
+}
+
+.section:last-child
+{
+    margin-bottom: 0px
+}
+
+.section_logo
+{
+    display: block;
+    margin: auto;
+}
+
+.section:hover
+{
+    border: 2px solid red;
+    animation: pulse-section-border 2s infinite;
+}
+
+th:nth-child(3)
+{
+    background: #000;
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+tr:last-child td:nth-child(3)
+{
+    border-bottom-color: black;
+}
+
+@keyframes pulse-section-border 
+{
+  0%   { border-color: #eee; }
+  50% { border-color: red; }
+  100% { border-color: #eee; }
+}
+
+.hidden-copy
+{
+    font-size: 0px;
+    margin-top: -9999px;
+    margin-left: -9999px;
+}
