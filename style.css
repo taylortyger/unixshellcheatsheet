@@ -111,6 +111,11 @@ td.terminal
     margin: auto;
 }
 
+.section_logo:hover
+{
+    animation: rotate 4s infinite;    
+}
+
 .section:hover
 {
     border: 2px solid red;
@@ -134,6 +139,16 @@ tr:last-child td:nth-child(3)
   0%   { border-color: #eee; }
   50% { border-color: red; }
   100% { border-color: #eee; }
+}
+
+@keyframes rotate
+{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .hidden-copy
